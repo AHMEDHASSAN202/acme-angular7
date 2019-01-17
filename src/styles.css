@@ -1,0 +1,205 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+div.card-header {
+    font-size: large;
+}
+
+div.card {
+    margin-top: 10px
+}
+
+.table {
+    margin-top: 10px
+}
+
+.nav-custom {
+    height: 60px;
+    background-color: #563d7c;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+.nav-custom>div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-custom a {
+    color: #cbbde2 !important;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.nav-custom a:hover,
+.nav-custom a:active,
+.nav-custom a:focus,
+.nav-custom li.active a {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+.nav-custom .navbar-nav a {
+    font-size: 16px;
+}
+
+.main-color,
+a {
+    color: #563d7c;
+}
+
+.panel-c {
+    border-color: #563d7c;
+}
+
+table thead {
+    color: #563d7c !important;
+}
+
+.panel-c .panel-heading,
+.card-header,
+.btn-c {
+    background-color: #563d7c;
+    color: #fff
+}
+
+.btn-c:hover {
+    color: #fff !important;
+    background-color: #3e2c5a !important;
+}
+
+.popup {
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    min-height: 60vh;
+}
+
+.main-bg-color {
+    background-color: #563d7c;
+    color: #fff
+}
+
+.heading {
+    font-size: 5rem;
+}
+
+.heading h1 {
+    font-weight: 600;
+    font-size: inherit;
+}
+
+.my-info {}
+
+.my-info strong {
+    font-weight: 800
+}
+
+.my-info i {
+    font-size: 30px;
+}
+
+.my-info img {
+    width: 160px;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+
+.my-info .icons a {
+    margin: 0 3px;
+}
+
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+    font-size: x-large;
+}
+
+li {
+    cursor: pointer;
+}
+
+
+/* Fade transition */
+
+
+/*pm-app div {
+  animation-duration: .5s;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  transition: transform .5s ease;
+}
+
+@keyframes fadeIn {
+from {
+  opacity: 0;
+}
+
+to {
+  opacity: 1;
+}
+}*/
+
+
+/* Slide transition */
+
+pm-app div.panel.panel-primary {
+    animation-duration: .5s;
+    animation-name: slideIn;
+    animation-fill-mode: forwards;
+    transition: transform .5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-200px);
+    }
+    to {
+        transform: translate(0px);
+    }
+}
+
+
+/* Spinner */
+
+.spinner {
+    font-size: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10
+}
+
+.glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}

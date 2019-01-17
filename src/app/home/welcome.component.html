@@ -1,0 +1,22 @@
+﻿<div class="text-center">
+    <div class="heading main-color">
+        <h1>{{ pageTitle }}</h1>
+    </div>
+    <p class="lead p">
+        Acme Product Management is simple Angular Application For Learning<br> enjoy !!
+        <br>
+        <a target="_blank" [href]="sourceCode"><small>soure code</small></a>
+    </p>
+
+    <div class="my-info">
+        <div>Developed by:</div>
+        <div><strong>{{ info.name }}</strong></div>
+        <div class="img">
+            <img [src]="info.avatar" alt="My Avatar">
+        </div>
+        <div class="icons">
+            <a target="_blank" [href]="info.facebook"><i class="fab fa-facebook main-color"></i></a>
+            <a target="_blank" [href]="info.github"><i class="fab fa-github main-color"></i></a>
+        </div>
+    </div>
+</div>
